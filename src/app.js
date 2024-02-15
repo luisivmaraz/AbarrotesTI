@@ -5,7 +5,6 @@ import morgan from 'morgan';
 import {config} from 'dotenv';
 import productsRouter from './routes/products.routes.js'
 config();
-// import {PORT} from './config.js'
 const app = express();
 //setings
 app.set('view engine', 'ejs');
