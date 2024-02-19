@@ -43,7 +43,7 @@ export const updateOne = (req, res) => {
     ProductDAO.updateOne(barcode, product)
         .then(result => {
             if (result) {
-                 res.render('/');
+                 res.redirect("../src/views/index.ejs");
             } else {
                 res.json({
                     status: "Product not found"
@@ -60,7 +60,7 @@ export const deleteOne = (req, res) => {
     ProductDAO.deleteOne(barcode)
       .then(result => {
         if (result) {
-             res.redirect("../src/views/edit.ejs", {  product   });
+             res.redirect("../src/views/index.ejs");
     } else {
         res.json({
             status: "Product not found"
