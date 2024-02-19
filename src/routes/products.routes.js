@@ -4,8 +4,7 @@ const router = Router();
 router.get('/', getAll);
 router.get('/:barcode',getOne);
 router.post('/',insertOne);
-router.put('/:barcode',updateOne);
+router.put('actualizar/:barcode',updateOne);
 router.delete('/:barcode',deleteOne);
 export default router;
-router.post("actualizar/:barcode", updateOne)//Actualizar productos de la otra pagina 
 router.get("/delete/:barcode", deleteOne)
