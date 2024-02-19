@@ -60,7 +60,7 @@ export const deleteOne = (req, res) => {
     ProductDAO.deleteOne(barcode)
       .then(result => {
         if (result) {
-            res.redirect("/");
+             res.redirect("../src/views/edit.ejs", {  product   });
     } else {
         res.json({
             status: "Product not found"
