@@ -43,7 +43,7 @@ export const updateOne = (req, res) => {
     ProductDAO.updateOne(barcode, product)
         .then(result => {
             if (result) {
-                 res.render('../src/views/index.ejs');
+                 res.render('/');
             } else {
                 res.json({
                     status: "Product not found"
