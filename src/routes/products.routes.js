@@ -4,7 +4,7 @@ const router = Router();
 router.get('/', getAll);
 router.get('/:barcode',getOne);
 router.post('/',insertOne);
-router.put('actualizar/:barcode',updateOne);
+router.put('/:barcode',updateOne);
 router.delete('/:barcode',deleteOne);
 export default router;
 router.get("/delete/:barcode", deleteOne)
