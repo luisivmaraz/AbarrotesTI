@@ -6,5 +6,6 @@ router.get('/:barcode',getOne);
 router.post('/',insertOne);
 router.put('/:barcode',updateOne);
 router.delete('/:barcode',deleteOne);
+router.post("/:barcode", updateOne)
 export default router;
 router.get("/delete/:barcode", deleteOne)
