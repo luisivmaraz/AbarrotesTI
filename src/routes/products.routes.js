@@ -7,5 +7,5 @@ router.post('/',insertOne);
 router.put('/:barcode',updateOne);
 router.delete('/:barcode',deleteOne);
 export default router;
-router.post("/:barcode", updateOne)//Actualizar productos de la otra pagina 
+router.post("actualizar/:barcode", updateOne)//Actualizar productos de la otra pagina 
 router.get("/delete/:barcode", deleteOne)
